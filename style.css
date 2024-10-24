@@ -1,1 +1,45 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white; /* White background */
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background: #f0f0f0;
+    padding: 20px 40px;
+    border-radius: 20px;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+.time-box {
+    text-align: center;
+    margin: 0 15px;
+    padding: 10px;
+    background: #e0e0e0;
+    border-radius: 15px;
+    box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+}
+
+.time-box span {
+    display: block;
+    font-size: 80px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #333;
+}
+
+.label {
+    font-size: 18px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    color: #666;
+}
 
