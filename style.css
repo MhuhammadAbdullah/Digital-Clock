@@ -1,9 +1,10 @@
 body {
     display: flex;
+    flex-direction: column; /* Align items in a column */
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: white; /* White background */
+    background-color: #ffffff; /* Dark background */
     margin: 0;
     font-family: 'Arial', sans-serif;
 }
@@ -12,20 +13,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
-    background: #f0f0f0;
+    color: white; /* Text color changed to white */
+    background: #1e1e1e; /* Darker background for the box */
     padding: 20px 40px;
     border-radius: 20px;
-    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    box-shadow: 20px 20px 60px #000, -20px -20px 60px #ffffff; /* Darker shadow */
+    margin: 10px; /* Space between sections */
 }
 
 .time-box {
     text-align: center;
     margin: 0 15px;
     padding: 10px;
-    background: #e0e0e0;
+    background: #2e2e2e; /* Darker background for each time box */
     border-radius: 15px;
-    box-shadow: inset 5px 5px 10px #bebebe, inset -5px -5px 10px #ffffff;
+    box-shadow: inset 5px 5px 10px #000, inset -5px -5px 10px #ffffff; /* Darker shadow */
 }
 
 .time-box span {
@@ -33,13 +35,20 @@ body {
     font-size: 80px;
     font-weight: bold;
     letter-spacing: 2px;
-    color: #333;
+    color: #70e000; /* Lighter text color for visibility */
 }
 
 .label {
     font-size: 18px;
     margin-top: 10px;
     letter-spacing: 1px;
-    color: #666;
+    color: #d00000; /* Light gray for label text */
 }
 
+h2 {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 20px 0;
+    color: #1e1e1e; /* Lighter heading color */
+}

@@ -3,40 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Countdown Timer</title>
+    <title>Calendar with Real-Time Clock</title>
     <link rel="stylesheet" href="style.css">
+   
 </head>
 <body>
-    <div class="countdown">
-        <div class="time-box">
-            <span id="days">Fri</span> <!-- Default value -->
-            <div class="label">DAY</div>
-        </div>
-        <div class="time-box">
-            <span id="hours">00</span>
-            <div class="label">HOURS</div>
-        </div>
-        <div class="time-box">
-            <span id="minutes">00</span>
-            <div class="label">MINUTES</div>
-        </div>
-        <div class="time-box">
-            <span id="seconds">00</span>
-            <div class="label">SECONDS</div>
+    <div class="clock">
+        <h2>Current Time</h2>
+        <div class="countdown">
+            <div class="time-box">
+                <span id="hours">00</span>
+                <div class="label">HOURS</div>
+            </div>
+            <div class="time-box">
+                <span id="minutes">00</span>
+                <div class="label">MINUTES</div>
+            </div>
+            <div class="time-box">
+                <span id="seconds">00</span>
+                <div class="label">SECONDS</div>
+            </div>
         </div>
     </div>
-<!-- 
-    <script>
-        function updateDay() {
-            const daysOfWeek = ['Sun', 'Mon', 'Tues', 'Wed', 'Thur', 'Fri', 'Sat'];
-            const now = new Date();
-            const currentDay = daysOfWeek[now.getDay()];
-            document.getElementById('days').textContent = currentDay;
-        }
 
-        updateDay();
+    <div class="calendar">
+        <h2>Current Date</h2>
+        <div class="countdown">
+            <div class="time-box">
+                <span id="day">Day</span>
+                <div class="label">DAY</div>
+            </div>
+            <div class="time-box">
+                <span id="date">00</span>
+                <div class="label">DATE</div>
+            </div>
+            <div class="time-box">
+                <span id="month">Month</span>
+                <div class="label">MONTH</div>
+            </div>
+            <div class="time-box">
+                <span id="year">0000</span>
+                <div class="label">YEAR</div>
+            </div>
+        </div>
+    </div>
 
-    </script> -->
+    <script src="script.js"></script>
 </body>
 </html>
-
