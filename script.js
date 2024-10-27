@@ -1,18 +1,18 @@
 function updateCalendar() {
-    const now = new Date();
+    var now = new Date();
 
     // Arrays for day and month names
-    const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-    const monthsOfYear = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    var daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+    var monthsOfYear = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
-    const day = daysOfWeek[now.getDay()];
-    const date = String(now.getDate()).padStart(2, '0');
-    const month = monthsOfYear[now.getMonth()];
-    const year = now.getFullYear();
+    var day = daysOfWeek[now.getDay()];
+    var date = String(now.getDate()).padStart(2, '0');
+    var month = monthsOfYear[now.getMonth()];
+    var year = now.getFullYear();
 
-    const hours = String(now.getHours()).padStart(2, '0');
-    const minutes = String(now.getMinutes()).padStart(2, '0');
-    const seconds = String(now.getSeconds()).padStart(2, '0');
+    var hours = String(now.getHours()).padStart(2, '0');
+    var minutes = String(now.getMinutes()).padStart(2, '0');
+    var seconds = String(now.getSeconds()).padStart(2, '0');
 
     // Update elements with names and values
     document.getElementById('day').textContent = day;
